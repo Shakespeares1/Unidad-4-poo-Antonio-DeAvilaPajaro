@@ -4,9 +4,14 @@
  */
 package Taller2.Ejercicios;
 
-public class MainHerenciaEmpleado {
+public class MainEstudiante {
     public static void main(String[] args) {
-        Programador p1 = new Programador("Antonio De Avila", 7800000, "Java");
-        p1.mostrarDatos();
+        Estudiante estudiante1 = new Estudiante();
+        Estudiante estudiante2 = new Estudiante("Antonio", 27);
+
+        estudiante1.mostrarDatos();
+        System.out.println();
+        estudiante2.mostrarDatos();
     }
 }
+

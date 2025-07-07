@@ -4,17 +4,24 @@
  */
 package Taller2.Ejercicios;
 
-public class Estudiante extends Persona {
-    private String curso;
+public class Estudiante {
+    private String nombre;
+    private int edad;
 
-    public Estudiante(String nombre, int edad, String curso) {
-        super(nombre, edad); // llama al constructor de Persona
-        this.curso = curso;
+    // Constructor con parámetros
+    public Estudiante(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
     }
 
-    @Override
+    // Constructor por defecto que llama al otro usando this()
+    public Estudiante() {
+        this("Desconocido", 0);
+    }
+
+    // Método para mostrar los datos
     public void mostrarDatos() {
-        super.mostrarDatos(); // llama al método de Persona
-        System.out.println("Curso: " + curso);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
     }
 }
