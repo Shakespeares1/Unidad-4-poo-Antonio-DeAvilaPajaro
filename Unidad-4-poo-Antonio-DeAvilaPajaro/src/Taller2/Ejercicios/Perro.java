@@ -14,7 +14,7 @@ public class Perro extends Animal {
 
     @Override
     public void hacerSonido() {
-        System.out.println(nombre + " dice: ¡Guau! y es un " + raza);
+        System.out.println(nombre + " dice: Guau! y es un " + raza);
     }
 }
 
