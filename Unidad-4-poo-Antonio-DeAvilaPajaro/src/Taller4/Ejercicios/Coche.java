@@ -12,7 +12,17 @@ public class Coche {
     public Coche(String marca, String modelo, double velocidadMaxima) {
         this.marca = marca;
         this.modelo = modelo;
-        this.velocidadMaxima = velocidadMaxima;
+        if (velocidadMaxima > 0) {
+            this.velocidadMaxima = velocidadMaxima;
+        } else {
+            this.velocidadMaxima = 0;
+        }
+    }
+
+    public void acelerar(double incremento) {
+        if (incremento > 0) {
+            velocidadMaxima += incremento;
+        }
     }
 
     public String getMarca() {
@@ -25,14 +35,5 @@ public class Coche {
 
     public double getVelocidadMaxima() {
         return velocidadMaxima;
-    }
-
-    public void acelerar(double incremento) {
-        if (incremento > 0) {
-            velocidadMaxima += incremento;
-            System.out.println("Acelerando... Nueva velocidad maxima: " + velocidadMaxima);
-        } else {
-            System.out.println("El incremento debe ser positivo.");
-        }
     }
 }
