@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Taller10.Ejercicio;
+package Taller14.Ejercicio;
 
-public class Gato extends Animal {
-    // No usamos @Override (mala práctica)
-    public void hacerSonido() {
-        System.out.println("El gato maúlla.");
+public class Circulo extends Figura {
+    @Override
+    public void calcularArea() {
+        System.out.println("Área del círculo: π * r^2");
     }
 }

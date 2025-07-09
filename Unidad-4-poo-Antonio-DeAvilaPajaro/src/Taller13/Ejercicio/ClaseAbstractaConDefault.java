@@ -4,10 +4,11 @@
  */
 package Taller13.Ejercicio;
 
-/**
- *
- * @author Anton
- */
-public class ClaseAbstractaConDefault {
-    
+// ❌ Esto es incorrecto conceptualmente: las clases abstractas no usan métodos "default"
+public abstract class ClaseAbstractaConDefault {
+    // Esto no es válido en clases abstractas: 'default' es solo para interfaces
+    // default void metodoInvalido() {
+    //     System.out.println("Método predeterminado en clase abstracta. ❌ No permitido.");
+    // }
 }
+

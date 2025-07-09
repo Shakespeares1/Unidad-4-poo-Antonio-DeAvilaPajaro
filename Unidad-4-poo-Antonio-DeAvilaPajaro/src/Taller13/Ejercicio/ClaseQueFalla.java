@@ -4,10 +4,8 @@
  */
 package Taller13.Ejercicio;
 
-/**
- *
- * @author Anton
- */
-public class ClaseQueFalla {
-    
+// ❌ Esta clase fallará si no implementa el método de la interfaz
+public class ClaseQueFalla implements InterfazIncorrecta {
+    // Error de compilación: falta métodoObligatorio()
 }
+

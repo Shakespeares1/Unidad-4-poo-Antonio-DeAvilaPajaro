@@ -4,14 +4,11 @@
  */
 package Taller9.Ejercicio;
 
-public class Moto extends Vehiculo {
+public class Planta {
+    private String tipo;
 
-    public Moto(String marca) {
-        super(marca);
-    }
-
-    public void mostrarMarca() {
-        // System.out.println("Marca: " + super.marca); // ❌ ERROR: 'marca' es private
+    public Planta(String tipo) {
+        this.tipo = tipo;
     }
 }
 

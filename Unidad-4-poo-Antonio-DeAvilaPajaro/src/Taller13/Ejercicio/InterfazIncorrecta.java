@@ -4,10 +4,6 @@
  */
 package Taller13.Ejercicio;
 
-/**
- *
- * @author Anton
- */
-public class InterfazIncorrecta {
-    
+public interface InterfazIncorrecta {
+    void metodoObligatorio();
 }

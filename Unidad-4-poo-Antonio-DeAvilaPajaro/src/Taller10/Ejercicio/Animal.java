@@ -4,10 +4,9 @@
  */
 package Taller10.Ejercicio;
 
-/**
- *
- * @author Anton
- */
 public class Animal {
-    
+    public void hacerSonido() {
+        System.out.println("El animal hace un sonido.");
+    }
 }
+
